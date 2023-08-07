@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AnimatedRoutes from './components/AnimatedRoutes';
 import { useState, useEffect, useRef } from 'react';
 import VolumeControl from './components/VolumeControl';
+import caratula from './assets/img/caratulaTylor.jpg';
+import pause from './assets/img/pause.svg';
+import play from './assets/img/play-duotone.svg';
+import volumen from './assets/img/volume-bold.svg';
+import music from './assets/Enchanted.mp3';
 
 function App() {
 	const audioRef = useRef(null);
@@ -42,7 +47,7 @@ function App() {
 						<div className="bg-morado w-64 h-128 rounded-lg shadow-xl flex flex-col items-center p-4 mr-8">
 							{/* Imagen de la Canción */}
 							<img
-								src="src/assets/img/caratulaTylor.jpg"
+								src={caratula}
 								alt="Canción"
 								className="w-full h-2/3 rounded-lg"
 							/>
@@ -51,14 +56,14 @@ function App() {
 							<div className="flex justify-center items-center space-x-4 mt-4">
 								{isPlaying ? (
 									<img
-										src="src/assets/img/pause.svg"
+										src={pause}
 										alt="Pause"
 										className="cursor-pointer"
 										onClick={togglePlayPause}
 									/>
 								) : (
 									<img
-										src="src/assets/img/play-duotone.svg"
+										src={play}
 										alt="Play"
 										className="cursor-pointer"
 										onClick={togglePlayPause}
@@ -75,7 +80,7 @@ function App() {
 								{/* Contenedor para ícono y slider */}
 								<div className="relative cursor-pointer w-20 h-20 flex items-center justify-center">
 									<img
-										src="src/assets/img/volume-bold.svg"
+										src={volumen}
 										alt="Volume"
 										className="w-20 h-20 z-0"
 										onClick={() => setShowVolumeSlider(!showVolumeSlider)}
@@ -100,7 +105,7 @@ function App() {
 					</div>
 
 					<audio ref={audioRef} id="miMusica">
-						<source src="src/assets/Enchanted.mp3" type="audio/mpeg" />
+						<source src={music} type="audio/mpeg" />
 						Tu navegador no soporta el elemento de audio.
 					</audio>
 				</div>
