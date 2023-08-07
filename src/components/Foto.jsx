@@ -2,6 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowIcon, ArrowIconLeft } from './ArrowIcon';
 import sabri from '../assets/img/sabriIlustrada.jpg';
+import ilustracion from '../assets/img/ilustracion.jpg';
+import otaku from '../assets/img/otaku.jpg';
+import poligonos from '../assets/img/poligonos.jpg';
+import terrorifica from '../assets/img/terrorifica.jpg';
+import abstracta from '../assets/img/abstracta.jpg';
+import rara from '../assets/img/rara.jpg';
+import taylor from '../assets/img/taylor.jpg';
 
 export default function Foto() {
 	const [revealEffect, setRevealEffect] = useState(false);
@@ -9,6 +16,16 @@ export default function Foto() {
 
 	const handleRevealClick = () => {
 		setRevealEffect(true);
+	};
+
+	const images = {
+		ilustracion: ilustracion,
+		otaku: otaku,
+		poligonos: poligonos,
+		terrorifica: terrorifica,
+		abstracta: abstracta,
+		rara: rara,
+		taylor: taylor,
 	};
 
 	return (
@@ -83,7 +100,7 @@ export default function Foto() {
 					<div className="border-4 border-noseHover rounded-lg overflow-hidden shadow-md">
 						{revealEffect ? (
 							<img
-								src={`../assets/img/${selectedEffect}.jpg`}
+								src={images[selectedEffect]}
 								alt="Con Efecto"
 								className="w-full h-full object-cover"
 							/>
