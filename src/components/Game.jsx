@@ -35,9 +35,6 @@ const Game = () => {
 			const containerWidth = gameContainerRef.current.offsetWidth;
 			const containerHeight = gameContainerRef.current.offsetHeight;
 
-			console.log('Ancho: ', containerWidth); // Agregamos esto
-			console.log('Alto: ', containerHeight); // Agregamos esto
-
 			const initialX = containerWidth / 2 - 25;
 			const initialY = containerHeight / 2 - 25;
 

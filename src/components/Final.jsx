@@ -1,4 +1,5 @@
 import Game from './Game';
+import monos from '../assets/img/monosabrazo.gif';
 
 export default function Final() {
 	return (
@@ -20,7 +21,7 @@ export default function Final() {
 					<p className="text-white text-lg mb-4">Lo hice con mucho cariño</p>
 
 					<img
-						src="src/assets/img/monosabrazo.gif"
+						src={monos}
 						alt="monos abrazándose"
 						className="mx-auto my-4 rounded-lg shadow-md w-1/2"
 					/>

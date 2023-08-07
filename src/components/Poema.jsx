@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowIcon, ArrowIconLeft } from './ArrowIcon';
+import mono from '../assets/img/mono.png';
 
 export default function Poema() {
 	const poemLines = [
@@ -147,7 +148,7 @@ export default function Poema() {
 				</foreignObject>
 
 				<image
-					href="src/assets/img/mono.png"
+					href={mono}
 					x="60"
 					y="700"
 					width="100"
