@@ -127,35 +127,35 @@ export default function Circle() {
 
 				{/* Función para renderizar círculos con emoji y texto */}
 				{renderCircle(250, 250, '💻', 'problemas', {
-					img: { problemas },
+					img: problemas,
 					text: 'Todo empezó por ayudarte con un problema, no pensé en ese momento que te volverías alguien tan importante para mí. Me gusta creer que las cosas pasan por algo y creo que así fue, justo en esa reunión de Zoom nadie pudo solucionar tu problema, ni el mismísimo Max. Gracias a un conjunto de sucesos específicos te hablé y agradezco al destino por eso.',
 				})}
 				{renderCircle(450, 270, '📚', 'programar', {
-					img: { programar },
+					img: programar,
 					text: 'Esto fue lo que más tiempo nos hizo pasar juntos, aunque creas que no, fuiste un pilar importante también para que lo lograra, me diste una motivación para seguir adelante y conseguirlo. Espero pudiera haberte traspasado un poco de conocimiento que te sirva para tu futuro. Y espero sigamos programando juntos alguna cosa en el futuro.',
 				})}
 				{renderCircle(700, 250, '🎟️', 'cine', {
-					img: { cine },
+					img: cine,
 					text: 'Esta fue la primera vez que hicimos algo y presencial, aunque casi no se da, pero quisiste acompañarme en un momento complicado y lo agradezco. Recuerdo esas 3 horas donde te tratabas de acomodar porque estabas cansada ya del asiento. Desde ese día asocio a Oppenheimer contigo.',
 				})}
 				{renderCircle(950, 290, '🍝', 'comida', {
-					img: { comida },
+					img: comida,
 					text: 'Esta ocasión fue de mis preferidas, si bien ya habíamos ido al cine juntos, esta fue donde más pudimos conversar y escuchar tus historias de tus accidentes yuyines o de tus planes a futuro, es algo que recuerdo con cariño. Me gusta escucharte sobre lo que quieres hacer o quieres tener, me hace sentir parte de eso. Y era verdad que era mucha comida, de solo recordarlo me lleno.',
 				})}
 				{renderCircle(950, 550, '🚇', 'metro', {
-					img: { metro },
+					img: metro,
 					text: 'Creo que siempre llevaré a esa señora y a la niña de al lado en mis recuerdos por tu culpa, aparte de toda la gente que habrá pasado como dijiste, aunque podría haber salido menos humillante tal vez, no me arrepiento de ese día porque aunque no fue la mejor te pude transmitir lo que pensaba de ti ',
 				})}
 				{renderCircle(700, 590, '📺', 'anime', {
-					img: { anime },
+					img: anime,
 					text: 'Aquí empezó tu caída al mundo oscuro, Empezamos con una película triste, pero bonita y terminamos viendo death note, me gusta verlo contigo, si bien ya la vi me entretengo esperando tus reacciones o escuchar tus pensamientos de que pasara. También tenemos pendientes otras películas que cuando se pueda espero veamos juntos.',
 				})}
 				{renderCircle(450, 550, '⛰️', 'cerro', {
-					img: { cerro },
+					img: cerro,
 					text: 'Soy como el Max diciendo lo del grupo preferido, pero este momento también es unos de mis preferidos, porque no teníamos un gran plan más que comer helado, pero al final hablamos en un parque, subimos el cerro y caminamos hasta estación central. Esos momentos comunes donde solo hablábamos de lo primero que se venía a la mente, los valoro bastante. Sé que no necesito un gran plan para pasarlo bien contigo, solo tu compañía y poder hablar. Próximamente tenemos que ver si podemos salir del escape room.',
 				})}
 				{renderCircle(250, 590, '🗿', '?', {
-					img: { monos },
+					img: monos,
 					text: 'Me faltaron muchos momentos, pero tengo pocos círculos y están complicados de hacer. Como menciones honorables menciono cuando hablamos horas por teléfono o el otro día donde te volviste un guarén y jugamos. Sé que es complicado, pero tú lo sabes, quiero seguir haciendo cosas contigo, no necesito grandes salidas o cosas entremedio, solo quiero compartir y apoyarte en lo que sea que te complique. Independiente de lo que sea, yo te apoyaré y estaré contigo. Si valoro algo es que para bien o para mal hemos sido honestos el uno con el otro y quiero que sigamos así. Puedes dudar muchas cosas pero nunca te cuestiones que eres una linda persona. ',
 				})}
 

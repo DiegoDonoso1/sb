@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowIcon, ArrowIconLeft } from './ArrowIcon';
+import sabri from '../assets/img/sabriIlustrada.jpg';
 
 export default function Foto() {
 	const [revealEffect, setRevealEffect] = useState(false);
@@ -73,11 +74,7 @@ export default function Foto() {
 				{/* Tarjeta de Imagen Original */}
 				<foreignObject x="200" y="150" width="400" height="500">
 					<div className="border-4 border-noseHover rounded-lg overflow-hidden shadow-md">
-						<img
-							src="src/assets/img/sabriIlustrada.jpg"
-							alt="Original"
-							className=" object-contain"
-						/>
+						<img src={sabri} alt="Original" className=" object-contain" />
 					</div>
 				</foreignObject>
 
@@ -86,7 +83,7 @@ export default function Foto() {
 					<div className="border-4 border-noseHover rounded-lg overflow-hidden shadow-md">
 						{revealEffect ? (
 							<img
-								src={`src/assets/img/${selectedEffect}.jpg`}
+								src={`../assets/img/${selectedEffect}.jpg`}
 								alt="Con Efecto"
 								className="w-full h-full object-cover"
 							/>

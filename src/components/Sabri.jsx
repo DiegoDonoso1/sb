@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowIcon, ArrowIconLeft } from './ArrowIcon';
+import pinguino from '../assets/img/pinguino.png';
+import corazon from '../assets/img/corazon.png';
 export default function Sabri() {
 	return (
 		<div className="relative p-10 bg-gradient-to-br from-e6fffd to-gray-100">
@@ -98,7 +100,7 @@ export default function Sabri() {
 					</Link>
 				</foreignObject>
 				<image
-					href="src/assets/img/corazon.png" // Cambia esto por la ruta de tu imagen
+					href={corazon} // Cambia esto por la ruta de tu imagen
 					x="750" // Posición x donde quieres colocar el sticker
 					y="100" // Posición y donde quieres colocar el sticker
 					width="50" // Ancho del sticker
@@ -108,7 +110,7 @@ export default function Sabri() {
 				{/* pinguino */}
 				<g className="animate-movePenguin">
 					<image
-						href="src/assets/img/pinguino.png"
+						href={pinguino}
 						x="60"
 						y="700" // nueva posición Y
 						width="100"
